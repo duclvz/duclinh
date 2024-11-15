@@ -52,6 +52,8 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+	<link rel="stylesheet" href="css/libs-gallery.css">
+
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -78,6 +80,7 @@
 							<li class="active"><a href="#">Home</a></li>
 							<li class="active"><a href="#fh5co-event">Events</a></li>
 							<li class="active"><a href="#fh5co-gallery">Gallery</a></li>
+							<li class="active"><a href="diachi">Maps</a></li>
 							<li class="active"><a href="#fh5co-services">Highlights</a></li>
 						</ul>
 					</div>
@@ -125,7 +128,9 @@
 					</div>
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
 						<h3>Thứ Tư, Ngày 11 Tháng 12 Năm 2024, Thanh Hóa</h3>
-						<p>Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt - ngày lễ trọng đại của chúng tớ. Chúng tớ muốn gửi đến các bạn những lời cảm ơn sâu sắc nhất và để bạn biết chúng tớ rất hạnh phúc vì sự hiện diện cùng những lời chúc tốt đẹp mà các bạn đã dành cho chúng tớ!!</p>
+						<p>Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt - ngày lễ trọng đại của chúng tớ. Chúng
+							tớ muốn gửi đến các bạn những lời cảm ơn sâu sắc nhất và để bạn biết chúng tớ rất hạnh phúc vì sự hiện
+							diện cùng những lời chúc tốt đẹp mà các bạn đã dành cho chúng tớ!!</p>
 					</div>
 				</div>
 				<div class="couple-wrap animate-box fadeInUp animated-fast">
@@ -164,16 +169,17 @@
 									<div class="event-wrap animate-box">
 										<h3>Lễ Vu Quy</h3>
 										<div style="display: flex;">
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>CHỦ NHẬT 08.12.2024</span>
+											<div class="event-col">
+												<i class="icon-calendar"></i>
+												<span>CHỦ NHẬT 08.12.2024</span>
+											</div>
+											<div class="event-col">
+												<i class="icon-clock"></i>
+												<span>15:00 PM</span>
+											</div>
 										</div>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>15:00 PM</span>
-										</div>
-									</div>
-										<p><b>Tư gia Nhà Gái:<br />Số 232 đường ĐT 510 - Phú Vinh Đông</b><br /><b>TT Bút Sơn - Hoằng Hóa - Thanh Hóa</b></p>
+										<p><b>Tư gia Nhà Gái:<br />Số 232 đường ĐT 510 - Phú Vinh Đông</b><br /><b>TT Bút Sơn - Hoằng Hóa -
+												Thanh Hóa</b></p>
 										<iframe
 											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9013.676824862057!2d105.84566232535917!3d19.8408845442001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3136599f6398584d%3A0x84b0a45d4b7212ea!2zSMO5bmcgVGjDunk!5e0!3m2!1svi!2s!4v1731486057365!5m2!1svi!2s"
 											width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
@@ -184,14 +190,14 @@
 									<div class="event-wrap animate-box">
 										<h3>Lễ Thành Hôn</h3>
 										<div style="display: flex;">
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>THỨ TƯ 11.12.2024</span>
-										</div>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>10:00 AM</span>
-										</div>
+											<div class="event-col">
+												<i class="icon-calendar"></i>
+												<span>THỨ TƯ 11.12.2024</span>
+											</div>
+											<div class="event-col">
+												<i class="icon-clock"></i>
+												<span>10:00 AM</span>
+											</div>
 										</div>
 										<p><b>Tư gia Nhà Trai:<br />Số 51 Đường Liên Xã - Đồng Tâm</b><br /><b>Thiệu Giao - Thiệu Hóa -
 												Thanh
@@ -209,7 +215,6 @@
 			</div>
 		</div>
 
-
 		<div id="fh5co-gallery" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row">
@@ -217,34 +222,165 @@
 						<h2>Gallery</h2>
 					</div>
 				</div>
+				<script type="text/javascript">
+					var photoGalleries = [];
+				</script>
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-12">
-						<ul id="fh5co-gallery-list">
+						<div class="gallery-container gallery-fancybox masonry-gallery animate-box" data-animate-effect="fadeIn">
+							<script type="text/javascript">
+								photoGalleries.push({
+									src: "images/gallery/MERL8009.JPG",
+									thumb: "images/gallery/MERL8009.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="0">
+								<img src="images/gallery/MERL8009.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL7894.JPG",
+									thumb: "images/gallery/MERL7894.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="1">
+								<img src="images/gallery/MERL7894.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL7927.JPG",
+									thumb: "images/gallery/MERL7927.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="2">
+								<img src="images/gallery/MERL7927.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL6946.JPG",
+									thumb: "images/gallery/MERL6946.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="3">
+								<img src="images/gallery/MERL6946.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL7061.JPG",
+									thumb: "images/gallery/MERL7061.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="4">
+								<img src="images/gallery/MERL7061.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL6921.JPG",
+									thumb: "images/gallery/MERL6921.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="5">
+								<img src="images/gallery/MERL6921.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL7788.JPG",
+									thumb: "images/gallery/MERL7788.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="6">
+								<img src="images/gallery/MERL7788.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL7361.JPG",
+									thumb: "images/gallery/MERL7361.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="7">
+								<img src="images/gallery/MERL7361.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL7971.JPG",
+									thumb: "images/gallery/MERL7971.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="8">
+								<img src="images/gallery/MERL7971.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL7984.JPG",
+									thumb: "images/gallery/MERL7984.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="9">
+								<img src="images/gallery/MERL7984.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL6616.JPG",
+									thumb: "images/gallery/MERL6616.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="10">
+								<img src="images/gallery/MERL6616.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+							
+								photoGalleries.push({
+									src: "images/gallery/MERL6674.JPG",
+									thumb: "images/gallery/MERL6674.JPG",
+									subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+								});
+							</script>
+							
+							<div class="grid grid-item btn-see-more-gallery" data-index="11">
+								<img src="images/gallery/MERL6674.JPG" alt class="img img-responsive">
+							</div>
+							<script type="text/javascript">
+								photoGalleries.push({ src: "images/gallery/MERL6687.JPG", thumb: "images/gallery/MERL6687.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL6761.JPG", thumb: "images/gallery/MERL6761.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL6798.JPG", thumb: "images/gallery/MERL6798.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL6864.JPG", thumb: "images/gallery/MERL6864.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL6952.JPG", thumb: "images/gallery/MERL6952.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL6974.JPG", thumb: "images/gallery/MERL6974.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7080.JPG", thumb: "images/gallery/MERL7080.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7119.JPG", thumb: "images/gallery/MERL7119.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7141.JPG", thumb: "images/gallery/MERL7141.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7179.JPG", thumb: "images/gallery/MERL7179.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7188.JPG", thumb: "images/gallery/MERL7188.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7233.JPG", thumb: "images/gallery/MERL7233.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7250.JPG", thumb: "images/gallery/MERL7250.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7268.JPG", thumb: "images/gallery/MERL7268.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7320.JPG", thumb: "images/gallery/MERL7320.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7328.JPG", thumb: "images/gallery/MERL7328.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7382.JPG", thumb: "images/gallery/MERL7382.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7413.JPG", thumb: "images/gallery/MERL7413.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7457.JPG", thumb: "images/gallery/MERL7457.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7467.JPG", thumb: "images/gallery/MERL7467.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7522.JPG", thumb: "images/gallery/MERL7522.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7550.JPG", thumb: "images/gallery/MERL7550.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7574.JPG", thumb: "images/gallery/MERL7574.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7596.JPG", thumb: "images/gallery/MERL7596.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7667.JPG", thumb: "images/gallery/MERL7667.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7733.JPG", thumb: "images/gallery/MERL7733.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7761.JPG", thumb: "images/gallery/MERL7761.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7798.JPG", thumb: "images/gallery/MERL7798.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7812.JPG", thumb: "images/gallery/MERL7812.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7827.JPG", thumb: "images/gallery/MERL7827.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL7843.JPG", thumb: "images/gallery/MERL7843.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL8039.JPG", thumb: "images/gallery/MERL8039.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL8131.JPG", thumb: "images/gallery/MERL8131.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`},{ src: "images/gallery/MERL8147.JPG", thumb: "images/gallery/MERL8147.JPG", subHtml: `<div class="lg-sub-html"><h4></h4></div>`});
+							</script>
+						</div>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/RS1.jpeg); ">
-								<a href="images/RS1.jpeg">
-									<div class="case-studies-summary">
-									</div>
-								</a>
-							</li>
-
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/RS2.jpeg); ">
-								<a href="images/RS2.jpeg">
-									<div class="case-studies-summary">
-									</div>
-								</a>
-							</li>
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/RS3.jpeg); ">
-								<a href="images/RS3.jpeg">
-									<div class="case-studies-summary">
-									</div>
-								</a>
-							</li>
-
-						</ul>
+						<div class="text-center mt-4" data-aos="fade-up">
+							<a href="javascript:void(0)" id="btn-see-more-gallery" class="btn-see-more-gallery">
+								<span> Tất cả hình ảnh </span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -301,6 +437,7 @@
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+	<script src="js/jquery.lightgallery.js"></script>
 
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 	<script src="js/simplyCountdown.js"></script>
