@@ -449,7 +449,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap .event-col {
   width: 50%;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #fh5co-counter {
@@ -1012,21 +1012,12 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-@media screen and (max-width: 768px) {
-  .heart {
-    display: none;
-  }
-}
 
 .couple-half {
   width: 50%;
   float: left;
 }
-@media screen and (max-width: 768px) {
-  .couple-half {
-    width: 100%;
-  }
-}
+
 .couple-half h3 {
   font-family: Photograph, Arial, serif;
   color: #ab4157;
@@ -1070,10 +1061,12 @@ form label {
 }
 .couple-half .desc-groom {
   padding-right: 180px;
+  padding-top: 24px;
   text-align: right;
 }
 .couple-half .desc-bride {
   padding-left: 180px;
+  padding-top: 24px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
