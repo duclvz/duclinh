@@ -345,6 +345,7 @@
     var data = $('#wish-form').serializeArray();
     if (!data[0].value || data[0].value.length < 3 || !data[1].value || data[1].value.length < 10) {
       $('#error').text('Tên quá ngắn hoặc nội dung chưa đủ dài').show();
+			$(e.target).prop( "disabled", false );
       setTimeout(function () {
         $('#error').hide();
       }, 3000);
