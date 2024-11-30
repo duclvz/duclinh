@@ -341,6 +341,7 @@
 
 	$('button.submit_form').click(function (e) {
     e.preventDefault();
+		$(e.target).prop( "disabled", true );
     var data = $('#wish-form').serializeArray();
     if (!data[0].value || data[0].value.length < 3 || !data[1].value || data[1].value.length < 10) {
       $('#error').text('Tên quá ngắn hoặc nội dung chưa đủ dài').show();
@@ -364,6 +365,7 @@
       }
     ).then(function () {
       $('#success').text('Gửi lời chúc thành công').show();
+			$(e.target).prop( "disabled", false );
       $('.wish-box').prepend(
         '<div class="wish-box-item"><strong>' +
           utf8(data[0].value) +
