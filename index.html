@@ -445,14 +445,11 @@
     }
 
 		function initAudio() {
-			var playLists = {
-					'song_1': 'audios/dwas.m4a',
-			};
-			var songs = Object.keys(playLists);
-			var songId = songs[Math.floor(Math.random()*songs.length)];
+			var playLists = ['audios/dwas.m4a','audios/edy.m4a','audios/ccyld.m4a','audios/hcy.m4a','audios/mmbn.m4a','audios/ndt.m4a','audios/nnca.m4a'];
+			var songId = (Math.random() * playLists.length) << 0;
 			$('.audio').append("<source id='sound_src' src=" + playLists[songId] + " type='audio/mpeg'>");
 			$('.audio').on('ended', function() {
-					var newSong = songs[Math.floor(Math.random() * songs.length)];
+					var newSong = (Math.random() * playLists.length) << 0;
 					$("#sound_src").attr("src", playLists[newSong]);
 					setTimeout(() => {
 						$(".audio").load().trigger('play');
